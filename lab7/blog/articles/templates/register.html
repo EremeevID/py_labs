@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Регистрация нового пользователя</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/article.css">
+</head>
+<body class="register">
+    <div class="header">
+        <img src="{{ STATIC_URL }}img/logo.png" alt="Django public blog" />
+        <div class="header-links">
+            <a href="/" class="header-link">Все статьи</a>
+            <a href="/login/" class="header-link">Войти</a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Регистрация</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="username" placeholder="Имя пользователя (логин)" value="{{ form.username }}">
+            <input type="email" name="email" placeholder="Электронная почта" value="{{ form.email }}">
+            <input type="password" name="password" placeholder="Пароль">
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+        {% if form.errors %}
+        <div class="errors">{{ form.errors }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>

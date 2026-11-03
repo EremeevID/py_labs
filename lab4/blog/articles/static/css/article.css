@@ -1,0 +1,115 @@
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0 0 60px 0;
+}
+
+.header {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header img {
+    display: block;
+    width: 318px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.archive {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.archive .header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.one-post {
+    margin-bottom: 40px;
+}
+
+.post-title {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.post-title a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.post-title a:hover {
+    opacity: 0.85;
+}
+
+.article-info {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.article-author {
+    width: 50%;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.article-created-date {
+    text-align: right;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.article-text {
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+/* Styles for single article page */
+.article .header {
+    overflow: hidden;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.article .header img {
+    float: left;
+    width: 318px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.article .header .all-articles-link {
+    float: right;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+    line-height: 48px;
+}
+
+.article .header .all-articles-link:hover {
+    opacity: 0.85;
+}
+
+.article .article-content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}

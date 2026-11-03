@@ -1,0 +1,418 @@
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0 0 60px 0;
+}
+
+.header {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header img {
+    display: block;
+    width: 318px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-links {
+    float: right;
+    line-height: 48px;
+}
+
+.header-link,
+.all-articles-link,
+.new-article-link {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+    line-height: 48px;
+    margin-left: 20px;
+}
+
+.header-link:hover,
+.all-articles-link:hover,
+.new-article-link:hover {
+    opacity: 0.85;
+}
+
+.user-greeting {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 48px;
+    margin-right: 10px;
+}
+
+/* Archive page styles */
+.archive {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.archive .header {
+    overflow: hidden;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.archive .header img {
+    float: left;
+    width: 318px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.one-post {
+    margin-bottom: 40px;
+}
+
+.post-title {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.post-title a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.post-title a:hover {
+    opacity: 0.85;
+}
+
+.article-info {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.article-author {
+    width: 50%;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.article-created-date {
+    text-align: right;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.article-text {
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.fold-button {
+    background: #ffffff;
+    color: #16a085;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.fold-button:hover {
+    background: #2c3e50;
+    color: #ffffff;
+}
+
+.one-post.folded .article-author,
+.one-post.folded .article-created-date,
+.one-post.folded .article-text {
+    display: none;
+}
+
+/* Styles for single article page */
+.article .header {
+    overflow: hidden;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.article .header img {
+    float: left;
+    width: 318px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.article .article-content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* Styles for create post page */
+.create-post .header {
+    overflow: hidden;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.create-post .header img {
+    float: left;
+    width: 318px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.create-post .content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.create-post h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.create-post form input[type="text"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    font-family: inherit;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #2c3e50;
+    outline: none;
+}
+
+.create-post form input[type="text"]:focus {
+    border-color: #34495e;
+    box-shadow: 0 0 5px rgba(52, 73, 94, 0.4);
+}
+
+.create-post form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 200px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    font-family: inherit;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #2c3e50;
+    resize: vertical;
+    outline: none;
+}
+
+.create-post form textarea:focus {
+    border-color: #34495e;
+    box-shadow: 0 0 5px rgba(52, 73, 94, 0.4);
+}
+
+.create-post form input[type="submit"] {
+    background: #ffffff;
+    color: #16a085;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.create-post form input[type="submit"]:hover {
+    background: #2c3e50;
+    color: #ffffff;
+}
+
+.create-post .errors {
+    margin-top: 20px;
+    padding: 12px 18px;
+    background: #e74c3c;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Styles for registration page */
+.register .header {
+    overflow: hidden;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.register .header img {
+    float: left;
+    width: 318px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.register .content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.register h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.register form input[type="text"],
+.register form input[type="email"],
+.register form input[type="password"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    font-family: inherit;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #2c3e50;
+    outline: none;
+}
+
+.register form input[type="text"]:focus,
+.register form input[type="email"]:focus,
+.register form input[type="password"]:focus {
+    border-color: #34495e;
+    box-shadow: 0 0 5px rgba(52, 73, 94, 0.4);
+}
+
+.register form input[type="submit"] {
+    background: #ffffff;
+    color: #16a085;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.register form input[type="submit"]:hover {
+    background: #2c3e50;
+    color: #ffffff;
+}
+
+.register .errors {
+    margin-top: 20px;
+    padding: 12px 18px;
+    background: #e74c3c;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Styles for login page */
+.login .header {
+    overflow: hidden;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.login .header img {
+    float: left;
+    width: 318px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.login .content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.login form input[type="text"],
+.login form input[type="password"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    font-family: inherit;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #2c3e50;
+    outline: none;
+}
+
+.login form input[type="text"]:focus,
+.login form input[type="password"]:focus {
+    border-color: #34495e;
+    box-shadow: 0 0 5px rgba(52, 73, 94, 0.4);
+}
+
+.login form input[type="submit"] {
+    background: #ffffff;
+    color: #16a085;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.login form input[type="submit"]:hover {
+    background: #2c3e50;
+    color: #ffffff;
+}
+
+.login .errors {
+    margin-top: 20px;
+    padding: 12px 18px;
+    background: #e74c3c;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+}
